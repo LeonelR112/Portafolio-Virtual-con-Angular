@@ -1,0 +1,79 @@
+
+.imgUser{
+    float: left;
+    margin: 2em;
+}
+
+.section-info{
+    padding: 2em;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.content-hab{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+}
+
+.hab{
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5em;
+}
+
+.hab img{
+    transition-property: transform;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.hab img:hover{
+    transform: scale(120%);
+    z-index: 10;
+}
+
+.titleLang{
+    width: 100%;
+    font-size: 20px;
+    bottom: -20px;
+    text-align:center;
+    font-weight: bold;
+    margin-top:0.5em;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+
+    transition: opacity ease-in-out 200ms;
+}
+
+
+.zoom{
+    transition: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.zoom:hover{
+    transform: scale(120%);
+}
+
+.imgUser{
+    border-radius: 5px;
+    border: 10px groove grey;
+}
+
+@media (max-width: 768px){
+    .titleLang{
+        opacity: 100%;
+    }
+
+    .imgUser{
+        width: 80%;
+    }
+}
+
+ul{
+    list-style: none;
+}

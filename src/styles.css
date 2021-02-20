@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+/*fuentes agregadas
+---------------------
+    roboto: font-family: 'Roboto', sans-serif;
+    share tech: font-family: 'Share Tech', sans-serif;
+
+*/
+
+.roboto-font{
+    font-family: 'Roboto', sans-serif;
+}
+
+.sharetech-font{
+    font-family: 'Share Tech', sans-serif;
+}
+
+.bg-light-transparent{
+    background-color: rgba(245, 245, 245, 0.7);
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    background: url('./assets/bgImg-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+}
+
+header .logo{
+    font-family: 'Share Tech', sans-serif;
+    font-size: 34px;
+    text-align: center;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+
+main{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+.logo a{
+    color: rgb(194, 194, 194);
+}
+
+.logo a:hover{
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+}
+
+/* Colores */
+.bg-main{
+    background: rgba(14,14,14, 0.7);
+    /*background-color: rgb(61, 61, 61);*/
+}
+
+.active{
+    color: white;
+}
+/* barra de navegación */
+
+.ulNav{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.liNav{
+    font-family: 'Share Tech', sans-serif;
+}
+
+.linkNav{
+    font-size: 22px;
+    color: rgb(194, 194, 194);
+
+    transition-property: color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.linkNav:hover{
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+}
+
+.animationIn{
+    animation-name: cardIn;
+    animation-duration: 700ms;
+    animation-timing-function: ease-in;
+}
+
+/* títulos */
+
+.title1{
+    color: white;
+    text-shadow: 2px 2px 2px rgb(36, 36, 36);
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(213,213,213,1) 100%);
+    border-left: 20px solid rgb(44, 44, 44);
+}
+
+/*html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/

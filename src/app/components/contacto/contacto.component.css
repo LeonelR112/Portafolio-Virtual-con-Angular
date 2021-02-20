@@ -1,0 +1,52 @@
+section{
+    min-height:calc(100% - 3em) ;
+    padding: 0px;
+}
+
+.email{
+    font-family: 'Share Tech', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(0, 89, 161);
+    text-shadow: 2px 2px 3px black;
+}
+
+@media (max-width: 552px){
+    .email{
+        font-size: 30px;
+    }
+}
+
+.email:hover{
+    text-shadow: 2px 2px 4px rgb(235, 235, 235);
+}
+
+.linkEmail:hover{
+    text-decoration: none;
+}
+
+.container-icon{
+    display: flex;
+    margin-bottom: 5em;
+}
+
+.item{
+    margin: 2em;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.item:hover{
+    transform: scale(120%);
+}
+
+@media (max-width: 540px){
+    .container-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+

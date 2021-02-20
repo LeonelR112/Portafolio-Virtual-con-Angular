@@ -1,0 +1,46 @@
+<header class="bg-main container-fluid border-bottom border-light">
+    <div class="row">
+        <div class="logo col-12 col-sm-12 col-md-12 col-lg-5">
+            <a routerLink="" class="mx-auto">Leonel Ruiz</a>
+        </div>
+        <nav class="col-12 col-sm-12 col-md-12 col-lg-7">
+            <ul class="ulNav">
+                <li class="liNav"><a mat-button routerLink="/home" class="btn-mat-button">HOME</a></li>
+                <li class="liNav"><a mat-button routerLink="/Portafolio" class="btn-mat-button">PORTAFOLIO</a></li>
+                <li class="liNav"><a mat-button routerLink="/Info" class="btn-mat-button">INFO</a></li>
+                <li class="liNav"><a mat-button routerLink="/Contacto" class="btn-mat-button">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="navResponsive col-12">
+            <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="./../../../assets/menu-icon.png" class="menuIcon" alt="menu"></a>
+            <div class="collapse" id="collapseExample">
+                <div class="my-2">
+                    <ul class="nav flex-column align-items-center">
+                        <li class="nav-item my-2">
+                            <a routerLinkActive = 'active' routerLink="/home" class="linkNav nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a routerLinkActive = 'active' routerLink="/Portafolio" class="linkNav nav-link">PORTAFOLIO</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a routerLinkActive = 'active' routerLink="/Info" class="linkNav nav-link">INFO</a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a routerLinkActive = 'active' routerLink="/Contacto" class="linkNav nav-link">CONTACO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--
+                <li class="liNav"><a routerLinkActive = 'active' routerLink = "/home" class="linkNav">Home</a></li>
+                <li class="liNav"><a routerLinkActive = 'active' routerLink= "/Portafolio" class="linkNav">Portafolio</a></li>
+                <li class="liNav"><a routerLinkActive = 'active' routerLink= "/Info" class="linkNav">Info</a></li>
+                <li class="liNav"><a routerLinkActive = 'active' routerLink= "/Contacto" class="linkNav">Contacto</a></li>
+
+-->
+
+

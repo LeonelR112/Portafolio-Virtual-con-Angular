@@ -1,0 +1,35 @@
+<section class="container-fluid p-0 my-3 animationIn" @fadeIn>
+    <div class="container border-top border-secondary bg-light-transparent">
+        <div class="row justify-content-around">
+            <div class="col-12 title1 icon-back">PORTAFOLIO</div>
+            <div class="col-12 description">
+                En esta sección, podrás ver todos mis proyectos y prácticas realizadas, tanto por cuenta propia como hechas en el instituto donde realizaba mi capacitación como desarrollador web.
+                <a mat-button color="primary" routerLink="/Info" class="link-info"><mat-icon>info</mat-icon> Más info</a>
+            </div>
+            <div class="col-12 sharetech-font">
+                <!--carta-->
+                <div class="row row-cols-1 row-cols-md-2 py-2 ">
+                    <div class="col mb-4" *ngFor="let carta of proyectos">
+                        <div class="card bg-light shadow position-relative">
+                            <div class="category {{carta.categoryClass}}">
+                                {{carta.titleType}}
+                            </div>
+                            <img src="{{carta.img}}" class="card-img-top border" alt="{{carta.title}}">
+                            <div class="card-body border-top">
+                                <h3 class="card-title border-bottom border-dark">{{carta.title}}</h3>
+                                <p class="card-text">{{carta.text}}</p>
+                                <!--<a href="{{carta.url}}" target="_blank" class="btn btn-outline-dark btn-lg">Ver</a>-->
+                                <a mat-icon-button aria-label="Ver" href="{{carta.url}}" class="icon-font-p" target="_blank" title="Ver proyecto">
+                                    <mat-icon>visibility</mat-icon>
+                                </a>
+                                <a mat-raised-button href="{{carta.urlRepo}}" target="_blank" class="m-2">{{carta.teamPartner}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fin carta-->
+            </div>
+
+        </div>
+    </div>
+</section>

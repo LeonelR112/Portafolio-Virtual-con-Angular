@@ -1,0 +1,15 @@
+footer{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    height: 3em;
+    line-height: 3em;
+    bottom: 0px;
+}
+
+@media (max-width: 460px){
+    footer{
+        font-size: 14px;
+    }
+}

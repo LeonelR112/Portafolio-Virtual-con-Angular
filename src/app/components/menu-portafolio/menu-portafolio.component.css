@@ -1,0 +1,82 @@
+section{
+    min-height:calc(100% - 3em) ;
+    padding: 0px;
+}
+
+.font-Roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.titleM{
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.cardPV{
+    border: 1px solid black;
+    margin: 1em;
+    height: 38em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.bg-front{
+    background-image: url('./../../../assets/front-end-portada.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.bg-back{
+    background-image: url('./../../../assets/backEnd-Portada.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.title-desc{
+    text-shadow: 2px 2px 3px black;
+    font-size: 18px;
+    color: white;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.description{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    font-family: 'Share Tech', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.category{
+    font-family: 'Share Tech', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 0.1em;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.bg-design{
+    background: linear-gradient(0deg, rgba(199,214,1,1) 0%, rgba(253,255,175,1) 100%);
+}
+
+.bg-appWeb{
+    background: linear-gradient(0deg, rgba(1,145,214,1) 0%, rgba(175,242,255,1) 100%);
+}
+
+.link-info:hover, .icon-font-p:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,87 @@
+<section class="container-fluid" @fadeIn>
+  <div class="container animationIn rounded-bottom">
+    <div class="row my-4">
+      <div class="col-12 title1">INFO</div>
+      <!--Bloque de imagen
+
+      <!--Bloque de información principal-->
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 bg-light-transparent rounded-bottom">
+        <img src="./../../../assets/fcv1.jpg" class="imgUser" width="360px" alt="...">
+        <div class="section-info ">
+          <h2 class="border-bottom roboto-font text-dark">SOFRE MÍ</h2>
+          {{infoPersonal.sobreMi}}
+        </div>
+        <div class="section-info">
+          <h3 class="border-bottom roboto-font text-dark">Sobre mis conocimientos</h3>
+          <div>
+            {{infoPersonal.educacion.resumen}}
+            <div *ngFor="let curso of infoPersonal.cursos" class="my-2">
+              <h4>{{curso.forma}} - <a href="{{curso.urlInst}}" target="_blank" title="Más info sobre el instituto">{{curso.inst}}</a></h4>
+              {{curso.infoInst}}
+            </div>  
+          </div>
+        </div>
+      </div>
+
+      <!--Bloque de habilidades-->
+      <div class="col-12 my-3 content-hab bg-light-transparent rounded-bottom">
+        <!--Lista de habilidades en programación-->
+        <div class="row w-60 align-self-center">
+          <div class="col-12 title1">Habilidades En Programación</div>
+          <div class="hab col-12 col-sm-3 col-md-2 m-2" *ngFor="let lenguaje of lenguajes">
+            <img src="{{lenguaje.imgUrl}}" class="align-self-center" alt="{{lenguaje.nombre}}" title="{{lenguaje.nombre}}" (click)="verCertificado(lenguaje, certificados)">
+            <div class="titleLang text-dark">
+              {{lenguaje.nombre}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 bg-light-transparent rounded-bottom">
+        <div class="row justify-content-center pb-2">
+          <div class="col-12 title1">Otras Habilidades</div>
+          <!--carta de información-->
+          <div class="card m-2 col-12 shadow-sm" *ngFor="let otraHab of otrasHabilidades" style="max-width: 520px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="{{otraHab.img}}" class="card-img zoom mt-2" alt="pc-reparación">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body sharetech-font">
+                  <h3 class="card-title">{{otraHab.nombre}}</h3>
+                  <p class="card-text">{{otraHab.desc}}</p>
+                  <p class="card-text"><small class="text-muted">{{otraHab.fechaCert}}</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Modal-->
+
+  <ng-template #certificados let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Certificado en {{certificado.nombre}}</h4>
+      <button type="button" class="close" aria-label="Close" (click)="cerrarModal()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <img src="{{certificado.imgCert}}" width="100%" alt="Angular 8">
+      <h4 class="border-bottom border-dark my-4">Temas vistos:</h4>
+      <p class="text-secondary p-2">
+        {{certificado.desc}}
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="cerrarModal()">Cerrar</button>
+    </div>
+  </ng-template>
+  
+
+</section>

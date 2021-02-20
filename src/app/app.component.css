@@ -1,0 +1,20 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    min-height:calc(100% - 3em) ;
+    padding: 0px;
+}
+
+.icon-back{
+    position: relative;
+}
+
+.btn-back{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}

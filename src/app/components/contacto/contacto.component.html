@@ -1,0 +1,23 @@
+<section class="container-fluid p-0 my-5 animationIn" @fadeIn>
+    <div class="container border-secondary rounded-bottom bg-light-transparent">
+        <div class="row my-2">
+            <div class="col-12 title1">CONTACTO</div>
+            <div class="col-12 roboto-font my-2 p-3">
+                Puede contactarme por Gmail, abajo se encuentra mi dirección. También puede verme en Linkedin para más detalles sobre mí o ir a mi repositorio en Github, donde encontrarás todos los repositorios de los proyectos que se encuentran en el portafolio virtual, con su estructura y más detalles de cada uno de las prácticas y proyectos.
+            </div>
+            <div class="col-7 py-2">
+                <h3 class="roboto-font">Mi Correo electrónico:</h3>
+                <p class="py-3">
+                    <a mat-button color="primary" href="mailto:{{email}}" class="linkEmail email">{{email}}</a>
+                </p>
+                <h3 class="roboto-font">También puedes encontrarme en:</h3>
+            </div>
+            <div class="container-icon col-12">
+                <a href="{{link.link}}" target="_blank" *ngFor="let link of links" title="{{link.name}}"><img src="{{link.icon}}" alt="{{link.name}}" class="item" width="70px"></a>
+            </div>
+            <div class="col-12 p-3 my-2 sharetech-font">
+                <h4></h4>
+            </div>
+        </div>
+    </div>
+</section>
